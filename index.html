@@ -59,12 +59,12 @@
           <iframe class="stretch" src="//www.youtube.com/embed/dxIPcbmo1_U" frameborder="0" allowfullscreen></iframe>
         </section>
 				<section>
-					<h2 class="fragment">Navigating Virtual Worlds</h2>
-          <small class="fragment">in</small>
-					<h1 class="fragment">Cyberspace</h1>
-          <small class="fragment">with</small>
-          <h2 class="fragment">Virtual Reality Modeling Language</h2>
-          <x3d width='200px' height='200px' class="fragment">
+					<h2>Navigating Virtual Worlds</h2>
+          <small>in</small>
+					<h1>Cyberspace</h1>
+          <small>with</small>
+          <h2>Virtual Reality Modeling Language</h2>
+          <x3d width='200px' height='200px'>
               <scene>
                   <transform translation='0 0 0' DEF="cube">
                   <shape>
@@ -83,15 +83,17 @@
         </section>
         <section>
           <small>or...</small>
-					<h1 class="fragment">The Virtual Cyberpocalypse:</h1>
-					<h2 class="fragment">The Death and Return of VR</h2>
+					<h1>The Virtual Cyberpocalypse:</h1>
+					<h2>The Death and Return of VR</h2>
         </section>
         <section>
           <small>or...</small>
-					<h1 class="fragment">How VRML Was Kind of Ridiculous</h1>
-					<h2 class="fragment">But Also Totally Right All Along</h2>
+					<h1>How VRML Was Kind of Ridiculous</h1>
+					<h2>But Also Totally Right All Along</h2>
         </section>
         <section fullscreen-img="images/badge.jpg">
+        </section>
+        <section fullscreen-img="images/Zappos_2000.png">
         </section>
         <section fullscreen-img="images/bill.jpg">
           <h1>THE YEAR IS 1995</h1>
@@ -111,20 +113,12 @@
           <h1>VRML</h1>
           <h2 class="fragment">Virtual Reality Modeling Language</h2>
         </section>
-        <section>
-          <img src="images/theinternet.jpg" alt="internet" class="stretch" />
-        </section>
         <section fullscreen-img="images/internet0.gif">
         </section>
         <section>
           <blockquote>Finally, we move to "perceptualized" Internetworks, where the data has been sensualized, that is, rendered sensually. If something is represented sensually, it is possible to make sense of it. VRML is an attempt (how successful, only time and effort will tell) to place humans at the center of the Internet, ordering its universe to our whims. In order to do that, the most important single element is a standard that defines the particularities of perception. Virtual Reality Modeling Language is that standard, designed to be a universal description language for multi-participant simulations.</blockquote>
         </section>
         <section fullscreen-img="images/internet2.gif">
-        </section>
-        <section fullscreen-img="images/friends.gif">
-        </section>
-        <section>
-          <h1>The Internet was scary!</h1>
         </section>
         <section>
           <img class="stretch" src="images/unix.gif" alt="unix" />
@@ -148,14 +142,14 @@
           <blockquote class="dark">What is an Avatar? It is your alter ego in Cyberspace, your body double in the virtual communities growing inside two and three dimensional virtual worlds online.</blockquote>
         </section>
         <section>
-          <iframe src="http://www.digitalspace.com/avatars/traveler.html" width="800" height="600"></iframe>
+          <h1>And now we always user VRML for everything.</h1>
         </section>
         <section>
           <h1>So... what killed VRML?</h1>
         </section>
         <section fullscreen-img="images/aol-dialup-connecting.gif">
           <h1 class="dark">Suspect 1: Dial-up</h1>
-          <iframe data-autoplay width="20" height="20" src="//www.youtube.com/embed/gsNaR6FRuO0" frameborder="0" allowfullscreen></iframe>
+          <audio src="images/dialup.mp3" data-autoplay></audio>
         </section>
         <section fullscreen-img="images/dot-com-bubble.jpg">
           <h1 class="dark">Suspect 2: The Dot-Com Bubble</h1>
@@ -174,7 +168,6 @@
         <section>
           <h3>1. Perceptualizing the Internet</h3>
           <img src="images/magic.gif" alt="magic" class="stretch" />
-          <h3>It's not so scary!</h3>
         </section>
         <section>
           <img src="images/addtocart.png" alt="cart" />
@@ -207,12 +200,44 @@
           <iframe src="http://www.x3dom.org/?page_id=2" width="800" height="600"></iframe>
         </section>
         <section>
-          <img src="images/x3domcardboard.png" al="x3cb" class="stretch" />
+          <img src="images/x3domcardboard.png" alt="x3cb" class="stretch" />
         </section>
         <section>
+         <x3d width='800px' height='600px'> 
+          <scene>
+  <Transform rotation='1 0 0 1.5'>
+    <Transform scale='100 100 100'>
+            <inline url="images/npm.x3d"> </inline> 
+   </Transform>
+ </Transform>
+          </scene>
+        </x3d>
+        </section>
+        <section style="background: url(images/stars.gif) repeat">
+          <audio src="http://dhtmlconf.com/sounds/will_smith-will_2k.mp3" data-autoplay></audio>
+          <x3d width='800px' height='400px'>
+              <scene>
+                  <transform translation='0 0 0' DEF="dhtml">
+                  <shape>
+                      <appearance>
+                          <ImageTexture  url="images/dhtmlconf2000.png"></ImageTexture>
+                      </appearance>
+                      <box size="5 5 5"></box>
+                  </shape>
+                  </transform>
+                 <timeSensor DEF='clock' cycleInterval='8' loop='true'></timeSensor>
+                 <orientationInterpolator DEF='spinThings' key='0 0.25 0.5 0.75 1' keyValue='0 1 0 0  0 1 0 1.57079  0 1 0 3.14159  0 1 0 4.71239  0 1 0 6.28317'></orientationInterpolator>
+                 <ROUTE fromNode='clock' fromField='fraction_changed' toNode='spinThings' toField='set_fraction'></ROUTE>
+                 <ROUTE fromNode='spinThings' fromField='value_changed' toNode='dhtml' toField='set_rotation'></ROUTE>
+              </scene>
+          </x3d>
+          <h1>The End</h1>
+          <p>@dharden</p>
+          <marquee><small>thank you @smartlola @deshawnbw @makenai @jennschiffer @lowtax @noopkat and everyone else who inspired this</small></marquee>
+        </section>
+        <section>
+          <h2>Use this slide if they somehow get tired of hearing Willenium</h2>
           <img class="stretch" src="images/dreams.gif" alt="dreams" />
-          <h1 class="fragment">The End</h1>
-          <p class="fragment">@dharden</p>
         </section>
 			</div>
 

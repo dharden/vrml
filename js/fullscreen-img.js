@@ -5,6 +5,7 @@ var BGR;
 
 function fullscreen(event) {
   var url = event.currentSlide.getAttribute("fullscreen-img");
+  var repeat = event.currentSlide.getAttribute("fullscreen-img-repeat") || "no-repeat";
   if(url) {
     if(typeof BGR == "undefined")
     {
@@ -13,7 +14,9 @@ function fullscreen(event) {
     }
 
     // Set image from fullscreen-img attribute as body background
-    document.body.style.backgroundImage = "url('" + url + "')";
+console.log(repeat);
+    document.body.style.background = "url('" + url + "')";
+    document.body.style.backgroundRepeat = repeat;
     var size = event.currentSlide.getAttribute("fullscreen-size");
     if(size != "contain") {
       document.body.style.backgroundSize = "cover";
@@ -25,7 +28,7 @@ function fullscreen(event) {
       // See http://www.w3schools.com/cssref/css3_pr_background.asp
       document.body.style.backgroundColor = "#000000";
       document.body.style.backgroundSize  = "contain";
-      document.body.style.backgroundRepeat = "no-repeat";
+      document.body.style.backgroundRepeat = "repeat";
       document.body.style.backgroundAttachment = "fixed";
       document.body.style.backgroundPosition = "center center";
     }
