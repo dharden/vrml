@@ -31,7 +31,7 @@
     </style>
 
     <!-- x3d -->
-    <script type='text/javascript' src='http://www.x3dom.org/download/x3dom.js'> </script>
+    <script type='text/javascript' src='js/x3dom.js'> </script>
 
 		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
 		<script>
@@ -95,6 +95,9 @@
         </section>
         <section fullscreen-img="images/Zappos_2000.png">
         </section>
+        <section data-background="#000">
+          <h1 style="font-family: Georgia; text-transform: none;"><span style="color: #ccc;">Vegas</span><span style="color: #000; -webkit-text-stroke: 1px #fff;">JS {}</span></h1>
+        </section>
         <section fullscreen-img="images/bill.jpg">
           <h1>THE YEAR IS 1995</h1>
         </section>
@@ -124,25 +127,19 @@
           <img class="stretch" src="images/unix.gif" alt="unix" />
         </section>
         <section>
-          <h1>Virtual Worlds</h1>
+          <img src="images/vrml1.jpg" alt="vrml" class="stretch" />
         </section>
         <section>
           <iframe src="http://www.philliphansel.org/suburbs/index.htm" width="800" height="600"></iframe>
         </section>
         <section>
-          <img src="images/vrml1.jpg" alt="vrml" class="stretch" />
-        </section>
-        <section>
           <iframe src="http://cwsapps.txcyber.com/32vrml.html" width="800" height="600"></iframe>
-        </section>
-        <section>
-          <h1>Avatars</h1>
         </section>
         <section fullscreen-img="images/avabar1.jpg">
           <blockquote class="dark">What is an Avatar? It is your alter ego in Cyberspace, your body double in the virtual communities growing inside two and three dimensional virtual worlds online.</blockquote>
         </section>
         <section>
-          <h1>And now we always user VRML for everything.</h1>
+          <h1>And now we always use VRML for everything.</h1>
         </section>
         <section>
           <h1>So... what killed VRML?</h1>
@@ -151,8 +148,13 @@
           <h1 class="dark">Suspect 1: Dial-up</h1>
           <audio src="images/dialup.mp3" data-autoplay></audio>
         </section>
-        <section fullscreen-img="images/dot-com-bubble.jpg">
-          <h1 class="dark">Suspect 2: The Dot-Com Bubble</h1>
+        <section>
+          <section fullscreen-img="images/dot-com-bubble.jpg">
+            <h1 class="dark">Suspect 2: The Dot-Com Bubble</h1>
+          </section>
+          <section>
+            <iframe src="http://cwsapps.txcyber.com/32vrml.html" width="800" height="600"></iframe>
+          </section>
         </section>
         <section fullscreen-img="images/vrlady.gif">
           <h1 class="dark">Suspect 3: 3D Itself</h1>
@@ -164,6 +166,7 @@
             <li class="fragment">Enabling Human Connections</li>
             <li class="fragment">Having Cool Virtual Reality Experiences</li>
           </ol>
+          <p class="fragment">Maybe... VRML was ahead of its time?</p>
         </section>
         <section>
           <h3>1. Perceptualizing the Internet</h3>
@@ -185,10 +188,6 @@
           <h1>Google Cardboard</h1>
         </section>
         <section>
-          <h1>Conceptually...</h1>
-          <h2>VRML was right</h3>
-        </section>
-        <section>
           <blockquote>Finally, we move to "perceptualized" Internetworks, where the data has been sensualized, that is, rendered sensually. If something is represented sensually, it is possible to make sense of it. VRML is an attempt (how successful, only time and effort will tell) to place humans at the center of the Internet, ordering its universe to our whims. In order to do that, the most important single element is a standard that defines the particularities of perception. Virtual Reality Modeling Language is that standard, designed to be a universal description language for multi-participant simulations.</blockquote>
         </section>
         <section>
@@ -205,15 +204,15 @@
         <section>
          <x3d width='800px' height='600px'> 
           <scene>
-  <Transform rotation='1 0 0 1.5'>
-    <Transform scale='100 100 100'>
-            <inline url="images/npm.x3d"> </inline> 
-   </Transform>
- </Transform>
+            <Transform rotation='1 0 0 1.5'>
+              <Transform scale='100 100 100'>
+                      <inline url="images/npm.x3d"> </inline> 
+             </Transform>
+           </Transform>
           </scene>
         </x3d>
         </section>
-        <section style="background: url(images/stars.gif) repeat">
+        <section style="background: url(images/stars.gif) repeat" data-background="#000">
           <audio src="http://dhtmlconf.com/sounds/will_smith-will_2k.mp3" data-autoplay></audio>
           <x3d width='800px' height='400px'>
               <scene>
